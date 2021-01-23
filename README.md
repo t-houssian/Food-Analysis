@@ -26,9 +26,7 @@ Steps to run the software:
 
 The specific purpose of this project was to learn how to use sql and python together. And since I have experience with Django I thought it would be cool to bring the code to life and connect the database to a django app rather than just a text based app.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of how created the Relational Database.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/XnJg7uGMXBo)
 
 # Relational Database
 
