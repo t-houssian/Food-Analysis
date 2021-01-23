@@ -35,12 +35,12 @@ The specific purpose of this project was to learn how to use sql and python toge
 Database used: sqllite3
 The database I created just has one table currently, the food_prices table:
 food_prices:
-            id integer PRIMARY KEY
-            cm_name text NOT NULL - name of the good
-            adm0_name text NOT NULL - name of the country
-            um_name text NOT NULL - name of the unit of measurment
-            mp_year text NOT NULL - year of the data
-            mp_price integer NOT NULL - price of the data, average to create a single price unit
+- id integer PRIMARY KEY
+- cm_name text NOT NULL - name of the good
+- adm0_name text NOT NULL - name of the country
+- um_name text NOT NULL - name of the unit of measurment
+- mp_year text NOT NULL - year of the data
+- mp_price integer NOT NULL - price of the data, average to create a single price unit
 
 # Development Environment
 
