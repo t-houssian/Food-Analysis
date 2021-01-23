@@ -98,7 +98,7 @@ class DataSetSelect(param.Parameterized):
         if self.multi_select.value:
             food_list = self.multi_select.value
             country_list = []
-            for x in food_list:
+            for x in food_list: # This Loop Filters the data to get the lowest value for each food
                 # temp = df.loc[df['mp_year'] == 2020]
                 temp = df[(df['mp_year'] >= self.date_select) & (df['mp_year'] <= self.date_select1)]
                 temp = temp.loc[temp['cm_name'] == x]
