@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card" style="background-color: #0077ff; 
+                             color: #ffffff; 
+                             box-shadow: 0 0 7px rgba(0,0,0,.1); 
+                             border-radius: 0;">
+    <div class="card-body">
+        <h6 class="card-subtitle ml-1">Global Food Analysis</h6>
+    </div>
+</div>
+<br>
+<div class="card col-lg-12">
+    <div class="card-body">
+        <div class="row">
+            {{ select|safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}

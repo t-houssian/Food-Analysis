@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar" style="background-color: #0077ff">
+          <div class="navbar-brand" >
+          </div>
+          {% if user.is_authenticated %}
+          <ul class="nav row justify-content-right">
+            <li class="nav-item">
+                <a class="nav-link text-white mr-1" href="/foodAnalysis">Food Analysis</a>
+            </li>
+            <li>
+                <a class="text-white mr-1">Hello<br />{{user.username}}!</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-danger ml-1" href="/logout">Logout</a>
+            </li>
+          </ul>
+
+          {% endif %}
+        </nav>
+        <div class="card w-100 align-items-center">
+            <div class="card-body">
+               {% block content %}
+               {% endblock %}
+            </div>
+        </div>
+    </section>
+
+    {% if user.is_authenticated %}
+    <section>
+        <center><h2 style="font-family: 'Tangerine', serif;">Global Food Analysis</h2></center>
+    </section>
+    {% endif %}
+
+</body>
+
+</html>
